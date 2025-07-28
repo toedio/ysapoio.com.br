@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jarvis Administração Integrada</title>
+    <title>YS - Apoio ao Integrador</title>
     <style>
         :root {
-            --cor-primaria: #f4f1ea;
-            --cor-secundaria: #233a4c;
+            --cor-primaria: #fbf3e8;
+            --cor-secundaria: #0c3547;
             --cor-fundo: #f5f7f9;
             --cor-texto: #1f1f1f;
             --cor-clara: #fff;
@@ -93,8 +93,10 @@
 
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 1fr; /* Apenas uma coluna */
             gap: 30px;
+            max-width: 450px; /* Limita a largura para centralizar melhor */
+            margin: 0 auto; /* Centraliza o container de serviço */
         }
 
         .service {
@@ -122,6 +124,7 @@
             color: var(--cor-subtexto);
             padding: 20px;
             margin: 10px 30px;
+            text-align: center;
         }
 
         #contato {
@@ -172,7 +175,7 @@
 <body>
     <header>
         <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-            <img src="logo.png" alt="Logo Jarvis Administração Integrada" />
+            <img src="logo.png" alt="Logo YS" />
         </div>
     </header>
 
@@ -183,18 +186,13 @@
     </nav>
 
     <section class="hero">
-        <h2>Consultoria estratégica para integração de processos empresariais</h2>
+        <h2>Apoio ao Integrador</h2>
     </section>
 
     <section id="about">
         <h2 style="text-align:center; margin-bottom: 40px;">Sobre nós</h2>
         <p>
-            Na Jarvis Administração Integrada, atuamos como um hub operacional que conecta empresas e soluções de forma
-            estratégica, eficiente e segura. Criamos estruturas administrativas enxutas, adaptáveis e preparadas para
-            atender
-            às necessidades específicas de negócios digitais e presenciais.
-            Combinamos agilidade, compliance e inteligência de processos para oferecer suporte a operações que exigem
-            rapidez na execução, segurança jurídica e flexibilidade estrutural.
+            Com agilidade, criatividade e conhecimento técnico, ajudamos você a apresentar propostas profissionais e fortalecer sua marca no mercado.
         </p>
     </section>
 
@@ -202,39 +200,23 @@
         <h2 style="text-align:center; margin-bottom: 40px;">Nossos Serviços</h2>
         <div class="services">
             <div class="service">
-                <h3>Administração Corporativa</h3>
-                <p>Prestamos serviços de administração e suporte com foco estratégico.</p>
-            </div>
-            <div class="service">
-                <h3>Gestão Documental</h3>
-                <p>Abertura e regularização de unidades operacionais com eficiência.</p>
-            </div>
-            <div class="service">
-                <h3>Estruturas Jurídicas e Digitais</h3>
-                <p>Criação e suporte para presença legal e tecnológica.</p>
-            </div>
-            <div class="service">
-                <h3>Ativos Digitais</h3>
-                <p>Organização e padronização de domínios, perfis e canais.</p>
-            </div>
-            <div class="service">
-                <h3>Projetos em Transição</h3>
-                <p>Apoio operacional para fases iniciais ou mudanças estratégicas.</p>
+                <h3>Design e Documentação para o Setor Solar</h3>
+                <p>Criação de artes e preparação de documentos profissionais, com foco total nas necessidades dos integradores.</p>
             </div>
         </div>
     </section>
 
     <section id="contato">
         <div class="contact-centered">
-            <p>Av Godofredo Maciel, 2290, LJ 29, Maraponga, Fortaleza, CE</p>
-            <p>contato@jarvisadm.com.br</p>
-            <p>(19) 8966-0617</p>
-            <p>CNPJ: 61.874.031/0001-66</p>
+            <p>Av. Viena Weyne, 812 - Bairro Cambeba, Fortaleza - CE</p>
+            <p>contato@ysapoio.com.br</p>
+            <p>(85) 8983-3724</p>
+            <p>CNPJ: 59.117.401/0001-79</p>
         </div>
     </section>
 
     <footer>
-        &copy; 2025 Jarvis Administração Integrada. Todos os direitos reservados.
+        &copy; 2025 YS. Todos os direitos reservados.
     </footer>
 </body>
 
