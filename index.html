@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jarvis Administração Integrada</title>
+    <style>
+        :root {
+            --cor-primaria: #f4f1ea;
+            --cor-secundaria: #233a4c;
+            --cor-fundo: #f5f7f9;
+            --cor-texto: #1f1f1f;
+            --cor-clara: #fff;
+            --cor-subtexto: #555;
+            --cor-footer: #ccc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-fundo);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--cor-primaria);
+            color: var(--cor-clara);
+            padding: 20px 40px;
+        }
+
+        header img {
+            height: 250px;
+            background-color: var(--cor-primaria);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav {
+            background: var(--cor-secundaria);
+            padding: 10px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--cor-clara);
+        }
+
+        .hero {
+            background: url("banner.png") center/cover no-repeat;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 30px 0;
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service {
+            background: var(--cor-clara);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .service h3 {
+            color: var(--cor-secundaria);
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: var(--cor-subtexto);
+        }
+
+        #about {
+            background: var(--cor-clara);
+        }
+
+        #about p {
+            color: var(--cor-subtexto);
+            padding: 20px;
+            margin: 10px 30px;
+        }
+
+        #contato {
+            padding: 0;
+            background: var(--cor-secundaria);
+        }
+
+        .contact-centered {
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .contact-centered h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-centered p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: var(--cor-secundaria);
+            color: var(--cor-footer);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            <img src="logo.png" alt="Logo Jarvis Administração Integrada" />
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Consultoria estratégica para integração de processos empresariais</h2>
+    </section>
+
+    <section id="about">
+        <h2 style="text-align:center; margin-bottom: 40px;">Sobre nós</h2>
+        <p>
+            Na Jarvis Administração Integrada, atuamos como um hub operacional que conecta empresas e soluções de forma
+            estratégica, eficiente e segura. Criamos estruturas administrativas enxutas, adaptáveis e preparadas para
+            atender
+            às necessidades específicas de negócios digitais e presenciais.
+            Combinamos agilidade, compliance e inteligência de processos para oferecer suporte a operações que exigem
+            rapidez na execução, segurança jurídica e flexibilidade estrutural.
+        </p>
+    </section>
+
+    <section id="servicos">
+        <h2 style="text-align:center; margin-bottom: 40px;">Nossos Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Administração Corporativa</h3>
+                <p>Prestamos serviços de administração e suporte com foco estratégico.</p>
+            </div>
+            <div class="service">
+                <h3>Gestão Documental</h3>
+                <p>Abertura e regularização de unidades operacionais com eficiência.</p>
+            </div>
+            <div class="service">
+                <h3>Estruturas Jurídicas e Digitais</h3>
+                <p>Criação e suporte para presença legal e tecnológica.</p>
+            </div>
+            <div class="service">
+                <h3>Ativos Digitais</h3>
+                <p>Organização e padronização de domínios, perfis e canais.</p>
+            </div>
+            <div class="service">
+                <h3>Projetos em Transição</h3>
+                <p>Apoio operacional para fases iniciais ou mudanças estratégicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contact-centered">
+            <p>Av Godofredo Maciel, 2290, LJ 29, Maraponga, Fortaleza, CE</p>
+            <p>contato@jarvisadm.com.br</p>
+            <p>(19) 8966-0617</p>
+            <p>CNPJ: 61.874.031/0001-66</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Jarvis Administração Integrada. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
